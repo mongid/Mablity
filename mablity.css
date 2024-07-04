@@ -1,0 +1,108 @@
+.mablity {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    user-select: none;
+    z-index: 1000;
+}
+.mablity .mablity-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #0781C4;
+    background-image: url('mablity/accessibility.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.mablity .mablity-btn:hover {
+    transform: rotate(-15deg);
+}
+.mablity .mablity-tools {
+    display: none;
+    direction: ltr;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 10px;
+    background-color: #fff;
+    text-align: center;
+    width: 200px;
+    height: 350px;
+    padding: 10px 10px 0 10px;
+    box-sizing: content-box;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+.mablity-tools span {
+    width: 40%;
+    flex-grow: 1;
+    font-size: 12px !important;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 20px;
+    padding-top: 45px;
+    box-sizing: content-box;
+    background-position: center 10px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.mablity-tools span:hover,
+.mablity-tools span.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.mablity-tools span:active {
+    transform: scale(0.8);
+}
+.mablity-tools span[data-mablity='sizeL'] {
+    background-image: url('mablity/enlarge.svg');
+}
+.mablity-tools span[data-mablity='sizeS'] {
+    background-image: url('mablity/reduce.svg');
+}
+.mablity-tools span[data-mablity='invert'] {
+    background-image: url('mablity/invert.svg');
+}
+.mablity-tools span[data-mablity='brightness'] {
+    background-image: url('mablity/brightness.svg');
+}
+.mablity-tools span[data-mablity='contrast'] {
+    background-image: url('mablity/contrast.svg');
+}
+.mablity-tools span[data-mablity='grayscale'] {
+    background-image: url('mablity/grayscale.svg');
+}
+.mablity-tools span[data-mablity='cursor'] {
+    background-image: url('mablity/cursor.svg');
+}
+.mablity-tools span[data-mablity='reset'] {
+    background-image: url('mablity/reset.svg');
+}
+.mablity-tools .rights {
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 8px;
+    margin-bottom: 5px;
+    box-sizing: content-box;
+    flex-grow: 1;
+    color: #0a91bf;
+    background-color: #8bd5ea59;
+    height: 18px;
+    border-radius: 8px;
+}
+.mablity-tools .rights:hover {
+    background-color: #0A91BF;
+    color: #fff;
+}
